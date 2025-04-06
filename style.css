@@ -1,0 +1,49 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+.gameSquare {
+    border: 2px solid grey;
+
+}
+
+.gameBoard {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 100px;
+    justify-self: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.startGameForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.gameRow {
+    display: flex;
+}
+
+.gameSquare {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+}

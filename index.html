@@ -8,6 +8,36 @@
     <script src="./ticTacToe.js" defer></script>
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
+    <dialog class="startGameDialog">
+        <form method="dialog" class="startGameForm">
+            <label for="playerOneName">Player One Name</label>
+            <input type="text" class="nameInput" id="playerOneName" name="playerOneName" maxlength="20" required>
+            <label for="playerTwoName">Player Two Name</label>
+            <input type="text" class="nameInput" id="playerTwoName" name="playerTwoName" maxlength="20" required>
+            <button type="submit" class="submitButton">Submit</button>
+            <button type="submit" class="cancelButton">Cancel</button>
+        </form>
+    </dialog>
+    <div class="gameBoard">
+        <h1>Tic Tac Toe</h1>
+        <h1 id="winnerHeader">-</h1>
+        <div class="gameRow number1">
+            <div class="gameSquare number1"></div>
+            <div class="gameSquare number2"></div>
+            <div class="gameSquare number3"></div>
+        </div>
+        <div class="gameRow number2">
+            <div class="gameSquare number1"></div>
+            <div class="gameSquare number2"></div>
+            <div class="gameSquare number3"></div>
+        </div>
+        <div class="gameRow number3">
+            <div class="gameSquare number1"></div>
+            <div class="gameSquare number2"></div>
+            <div class="gameSquare number3"></div>
+        </div>
+        <button id="startGameButton">Start Game / New Players</button>
+        <button id="resetGameButton">Reset Game</button>
+    </div>
 </body>
 </html>
